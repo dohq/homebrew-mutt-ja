@@ -49,8 +49,8 @@ class Mutt < Formula
             "--with-regex",
             "--with-idn",
             "--enable-cjk-ambiguous-width",
-            "--with-slang"
-            "--enable-gpgme"
+            "--with-slang",
+            "--enable-gpgme",
             # This is just a trick to keep 'make install' from trying to chgrp
             # the mutt_dotlock file (which we can't do if we're running as an
             # unpriviledged user)
