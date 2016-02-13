@@ -70,21 +70,25 @@ class Mutt-ja < Formula
   end
 
   def patches
-    { "1" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/467432-write_bcc.patch "
-      "2" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/548577-gpgme-1.2.patch "
-      "3" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/nntp.patch "
-      "4" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/patch-1.5.23.tt.create_rfc2047_params.1 "
-      "5" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/patch-1.5.23.tt.sanitize_ja_char.1 "
-      "6" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/patch-1.5.23.tt.wcwidth.1 "
-      "7" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar.patch "
-      "8" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar-compose.patch "
-      "9" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar-delimnullwide.patch "
-      "10" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar-dotpathsep.patch "
-      "11" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar-new.patch "
-      "12" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar-newonly.patch "
-      "13" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar-utf8.patch "
-      "14" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/smime.rc.patch "
-      "15" => " https://raw.githubusercontent.com/dohq/mutt-patch/master/trash-folder.patch "}
+    {
+      [
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/467432-write_bcc.patch ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/548577-gpgme-1.2.patch ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/nntp.patch ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/patch-1.5.23.tt.create_rfc2047_params.1 ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/patch-1.5.23.tt.sanitize_ja_char.1 ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/patch-1.5.23.tt.wcwidth.1 ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar.patch ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar-compose.patch ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar-delimnullwide.patch ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar-dotpathsep.patch ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar-new.patch ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar-newonly.patch ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/sidebar-utf8.patch ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/smime.rc.patch ",
+        " https://raw.githubusercontent.com/dohq/mutt-patch/master/trash-folder.patch ",
+      ]
+    }
   end
 
   def install
