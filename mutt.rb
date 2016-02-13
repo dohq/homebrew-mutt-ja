@@ -28,8 +28,10 @@ class Mutt < Formula
 
   depends_on 'openssl'
   depends_on 'tokyo-cabinet'
-  depends_on 's-lang' => :optional
-  depends_on 'gpgme' => :optional
+  depends_on 'libidn'
+  depends_on 's-lang'
+  depends_on 'gpgme'
+  depends_on 'w3m'
 
   def install
     args = ["--disable-dependency-tracking",
@@ -47,12 +49,12 @@ class Mutt < Formula
             "--with-regex",
             "--with-idn",
             "--enable-cjk-ambiguous-width",
+            "--with-slang"
+            "--enable-gpgme"
             # This is just a trick to keep 'make install' from trying to chgrp
             # the mutt_dotlock file (which we can't do if we're running as an
             # unpriviledged user)
             "--with-homespool=.mbox"]
-    args << "--with-slang" if build.with? 's-lang'
-    args << "--enable-gpgme" if build.with? 'gpgme'
 
     if build.with? 'debug'
       args << "--enable-debug"
