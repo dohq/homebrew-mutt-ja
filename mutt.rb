@@ -8,7 +8,7 @@
 # the mutt community maintain a more comprehesive tap with better
 # support for patches.
 
-class Mutt-ja < Formula
+class Mutt < Formula
   desc "Mongrel of mail user agents (part elm, pine, mush, mh, etc.)"
   homepage "http://www.mutt.org/"
   url "https://bitbucket.org/mutt/mutt/downloads/mutt-1.5.24.tar.gz"
