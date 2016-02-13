@@ -50,7 +50,11 @@ class Mutt < Formula
             "--with-idn",
             "--enable-cjk-ambiguous-width",
             "--with-slang",
-            "--enable-gpgme"]
+            "--enable-gpgme",
+            # This is just a trick to keep 'make install' from trying to chgrp
+            # the mutt_dotlock file (which we can't do if we're running as an
+            # unpriviledged user)
+            "--with-homespool=.mbox"]
 
     if build.with? 'debug'
       args << "--enable-debug"
